@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">aplikasi_absen</string>
+
+    <string name="edittext_hintFullname"><font size="14">Full Name</font></string>
+    <string name="edittext_hintEmail"><font size="14">Email</font></string>
+    <string name="edittext_hintPhone"><font size="14">Phone Number</font></string>
+    <string name="edittext_hintAddress"><font size="14">Address</font></string>
+    <string name="edittext_hintPassword"><font size="14">Password</font></string>
+    <string name="edittext_hintConfirmPassword"><font size="14">Confirm Password</font></string>
+
+
+    <string name="avStart_cardRegister"><font size="14">Confirm </font></string>
+
+
+    <!-- Api Keys -->
+    <string name="apikey_registerKaryawan">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vdmxoa2d4anZjeXVyY3ZuaXljIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgzNDY5NzAsImV4cCI6MTk4MzkyMjk3MH0.3ZGFUTGdh5f-fFG-_hEMHSh-3f4ciUPnHvIBNN3Zzog</string>
+</resources>

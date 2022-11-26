@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="@color/mainOrange"
+            app:cardCornerRadius="0dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="372dp"
+            app:cardBackgroundColor="@color/mainOrange"
+            app:cardCornerRadius="80dp"
+            app:strokeWidth="0dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/avRegister_imageview_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="40dp"
+        android:textSize="42dp"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avRegister_card_iptFullname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="45dp"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="170dp">
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipt_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/gray2"
+            android:background="@color/white"
+            android:hint="@string/edittext_hintFullname"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avRegister_card_iptEmail"
+        android:layout_width="match_parent"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:layout_below="@id/avRegister_card_iptFullname"
+        android:layout_height="40dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginHorizontal="45dp"
+
+        app:strokeColor="@color/gray"
+        android:layout_marginTop="18dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipt_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"
+            android:singleLine="true"
+            android:hint="@string/edittext_hintEmail"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avRegister_card_iptPhonenumber"
+        android:layout_width="match_parent"
+        android:layout_below="@id/avRegister_card_iptEmail"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="45dp"
+
+        app:strokeColor="@color/gray"
+        android:layout_marginTop="18dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipt_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"
+            android:hint="@string/edittext_hintPhone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:paddingStart="12dp"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avRegister_card_iptAddress"
+        android:layout_width="match_parent"
+        android:layout_below="@id/avRegister_card_iptPhonenumber"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="45dp"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+
+        app:strokeColor="@color/gray"
+        android:layout_marginTop="18dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipt_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"
+            android:hint="@string/edittext_hintAddress"
+            android:inputType="text"
+            android:singleLine="true"
+            android:paddingStart="12dp"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avRegister_card_iptPassword"
+        android:layout_width="match_parent"
+        android:layout_below="@id/avRegister_card_iptAddress"
+        android:layout_height="40dp"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:layout_marginHorizontal="45dp"
+
+        app:strokeColor="@color/gray"
+        android:layout_marginTop="18dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipt_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"
+            android:hint="@string/edittext_hintPassword"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avRegister_card_iptConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_below="@id/avRegister_card_iptPassword"
+        android:layout_height="40dp"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:layout_marginHorizontal="45dp"
+
+        app:strokeColor="@color/gray"
+        android:layout_marginTop="18dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ipt_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray2"
+            android:hint="@string/edittext_hintConfirmPassword"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:singleLine="true"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avRegister_card_btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/avRegister_card_iptConfirmPassword"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="18dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/mainOrange"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="@color/gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="SIGN UP"
+            android:textColor="@color/white" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/avLogin_tv_dhay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have account Already?"
+            />
+
+        <TextView
+            android:id="@+id/avRegister_textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@id/avLogin_tv_dhay"
+            android:text="Login !"
+            android:textColor="@color/mainOrange" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:strokeWidth="0dp"
+
+            app:cardBackgroundColor="@color/mainOrange"
+            app:cardCornerRadius="0dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="372dp"
+            app:cardBackgroundColor="@color/mainOrange"
+            app:cardCornerRadius="80dp"
+            app:strokeWidth="0dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/avLogin_imageview_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="40dp"
+        android:textSize="42dp"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avLogin_card_iptEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="45dp"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="290dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/gray2"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:hint="@string/edittext_hintEmail"
+            android:paddingStart="12dp"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avLogin_card_iptPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="45dp"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        android:layout_below="@id/avLogin_card_iptEmail"
+        android:layout_marginTop="18dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/gray2"
+            android:background="@color/white"
+            android:hint="@string/edittext_hintPassword"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:paddingStart="12dp"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avLogin_card_btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/avLogin_card_iptPassword"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="18dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/mainOrange"
+        app:cardCornerRadius="8dp"
+        app:strokeColor="@color/gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="SIGN IN"
+            android:textColor="@color/white" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/avLogin_tv_dhay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dont have account yet?" />
+
+        <TextView
+            android:id="@+id/avLogin_textview_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_toRightOf="@id/avLogin_tv_dhay"
+            android:text="Register!"
+            android:textColor="@color/mainOrange" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

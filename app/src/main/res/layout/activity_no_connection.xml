@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoConnectionActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_signal_cellular_connected_no_internet_0_bar_24"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/roboto_bold"
+            android:text="No Internet Connection!"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/roboto_light"
+            android:textAlignment="center"
+            android:layout_marginTop="3dp"
+            android:text="Try moving closer to the wireless router, or if you dont have internet data get a job and buy some gigs"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_quitapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit App"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="135dp"
+        />
+
+</RelativeLayout>

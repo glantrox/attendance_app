@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardCornerRadius="0dp"
+            app:strokeWidth="0dp"
+
+            app:cardBackgroundColor="@color/mainOrange"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            app:strokeWidth="0dp"
+
+            app:cardBackgroundColor="@color/mainOrange"
+            app:cardCornerRadius="100dp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/illustration_avstart"
+        android:layout_above="@id/avStart_tvCenter1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/avStart_tvCenter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto_black"
+        android:text="Employeeeeeeeees!"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avStart_tvCenter1"
+        android:layout_centerInParent="true"
+        android:text="Get update from each employee and fullday location"
+        android:textAlignment="center" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avStart_card_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="42dp"
+        app:cardCornerRadius="12dp"
+        app:strokeColor="@color/mainOrange"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="REGISTER"
+            android:textColor="@color/mainOrange" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/avStart_card_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/avStart_card_signup"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@color/mainOrange"
+        app:cardCornerRadius="12dp"
+        app:strokeColor="@color/mainOrange"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="SIGN IN"
+            android:textColor="@color/white" />
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

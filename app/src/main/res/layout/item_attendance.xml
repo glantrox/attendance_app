@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/listAttendanceCard"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_margin="6dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="6dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/itemListAttendance_tv_textNama"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="22dp"
+               android:layout_marginTop="15dp"
+               android:fontFamily="@font/roboto_bold"
+               android:text="Hamas Azizan"
+               android:textSize="18dp" />
+
+           <TextView
+               android:id="@+id/itemListAttendance_tv_textStatus"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/itemListAttendance_tv_textNama"
+               android:layout_marginStart="22dp"
+               android:text="Attended Today 10:00 "
+               android:textColor="@color/gray" />
+
+           <ImageView
+               android:id="@+id/itemListAttendance_img_iconStatus"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="22dp"
+               android:src="@drawable/ic_baseline_meeting_room_24"
+               app:tint="@color/mainOrange" />
+       </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/avSettings_RL_topmenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:elevation="52dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Settings"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:id="@+id/avSettings_img_btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+                app:tint="@color/black" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/avSettings_RL_topmenu">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/avSettings_card_gotoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:cardBackgroundColor="@color/gray2"
+                android:layout_margin="8dp"
+                app:strokeWidth="0dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="9dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/avSettings_img_avatarAccount"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/ic_baseline_person_24"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"/>
+
+                    <TextView
+                        android:id="@+id/avSettings_tv_nameAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/avSettings_img_avatarAccount"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Loading User"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/avSettings_tv_emailAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/avSettings_tv_nameAccount"
+                        android:layout_marginStart="12dp"
+                        android:layout_toRightOf="@+id/avSettings_img_avatarAccount"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/avSettings_tv_phonenumberAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/avSettings_tv_emailAccount"
+                        android:layout_marginStart="12dp"
+                        android:layout_toRightOf="@id/avSettings_img_avatarAccount"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

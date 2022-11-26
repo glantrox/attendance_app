@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentDetailAbsen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="5dp"
+            app:cardBackgroundColor="@color/gray"
+            android:layout_marginTop="6dp"
+            app:strokeWidth="0dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="8dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/defautlGreen"
+        app:cardElevation="8dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_margin="12dp"
+                android:layout_centerHorizontal="true"
+                >
+                <TextView
+                    android:id="@+id/statustvtop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATTENDED"
+
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFoto"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="8dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/mainOrange"
+        app:cardElevation="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="12dp"
+                >
+                <TextView
+                    android:id="@+id/nameKaryawan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hamas Azizan"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/tv_attendedAttop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attended at 08:12"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/roboto_light"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCekInOut"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardElevation="8dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_attendbawah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Attended"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+                <TextView
+                    android:id="@+id/tvcekin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:10"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/roboto_light"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:layout_alignParentEnd="true"
+                >
+                <TextView
+                    android:id="@+id/tvcekot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Checked Out"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="22dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/tvcekot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:10"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/roboto_light"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <TextView
+        android:id="@+id/tv_attendanceID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance ID  227"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

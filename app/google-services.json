@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1091320300244",
+    "project_id": "aplikasi-absen-c0b5d",
+    "storage_bucket": "aplikasi-absen-c0b5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091320300244:android:890f4f9966802b4768b141",
+        "android_client_info": {
+          "package_name": "com.example.aplikasi_absen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091320300244-bdbmgva11lcvsa1ncf78jkfa4q94rg5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0pkUdYtYn0RQTr509Xm22LD06QUxFIrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091320300244-bdbmgva11lcvsa1ncf78jkfa4q94rg5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

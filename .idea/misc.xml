@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_attendance.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.20391387939453126" />
+        <entry key="app/src/main/res/layout/activity_list_karyawan.xml" value="0.29572194417317704" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/activity_no_connection.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.3179824829101563" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.3729166666666667" />
+        <entry key="app/src/main/res/layout/activity_start.xml" value="0.26635284423828126" />
+        <entry key="app/src/main/res/layout/activity_update.xml" value="0.3729166666666667" />
+        <entry key="app/src/main/res/layout/bottom_sheet_check_in.xml" value="0.3072289156626506" />
+        <entry key="app/src/main/res/layout/detail_absen.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/fragment_check_in.xml" value="0.315625" />
+        <entry key="app/src/main/res/layout/item_attendance.xml" value="0.32864583333333336" />
+        <entry key="app/src/main/res/layout/item_listkaryawan.xml" value="0.3880208333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

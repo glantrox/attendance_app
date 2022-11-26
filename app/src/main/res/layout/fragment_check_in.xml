@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckIn">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check-In"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="22dp"
+            android:textSize="22dp"
+            android:fontFamily="@font/roboto_bold"
+            />
+
+        <ImageView
+            android:id="@+id/bsCheckin_img_btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:tint="@color/gray" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_attend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/mainOrange"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here to Attend "
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="16dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_gravity="end"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="18dp"
+            app:tint="@color/white" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="if you're absent"
+        android:layout_gravity="center"
+        android:textColor="@color/gray"
+        android:textSize="11dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        android:orientation="horizontal"
+        >
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/gray2"
+            android:layout_marginEnd="3dp"
+            app:cardCornerRadius="12dp"
+            app:strokeWidth="0dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="2dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:id="@+id/inputAbsent"
+                android:hint="Type your Reason here!"
+                android:paddingStart="12dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="12dp"
+                    android:id="@+id/imgAbsent"
+                    android:src="@drawable/ic_baseline_check_24"
+                    app:tint="@color/mainOrange" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressbar_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
