@@ -1,4 +1,6 @@
 ![foto](https://i.imgur.com/1UT5EuC.png)
+![foto](https://i.imgur.com/HnGozRq.png)
+
 
 # AttendanceApp
 an Attendance application created with kotlin, API based on Supabase 
@@ -14,4 +16,8 @@ an Attendance application created with kotlin, API based on Supabase
 ∙ To store Attendance Pictures and Profile Pictures I use **Imgur API** <br>
 ∙ Daily Attendance Data Detection uses the ``"date eq.now()"`` query on Params <br>
 ∙ The database also stores where user **Checked-Out** and **Checked-In** Location by **Longtitude** and **Latitude**
+
+
+
+
 
