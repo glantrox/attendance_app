@@ -1,5 +1,5 @@
 ![foto](https://i.imgur.com/1UT5EuC.png)
-[Imgur](https://imgur.com/HnGozRq)
+
 # AttendanceApp
 an Attendance application created with kotlin, API based on Supabase 
 
