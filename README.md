@@ -1,5 +1,4 @@
 ![foto](https://i.imgur.com/1UT5EuC.png)
-![foto](https://i.imgur.com/HnGozRq.png)
 
 
 # AttendanceApp
@@ -17,6 +16,10 @@ In conclusion, creating an attendance application with Kotlin and Supabase was a
 
 ## Application Implementation
 
+### 📷 Snapshots
+![foto](https://i.imgur.com/HnGozRq.png)
+
+
 ### 😎 Application Features
 ∙ Daily Attendance Detection <br>
 ∙ Current Location where you've Checked-In and Checked-Out<br>
@@ -26,7 +29,6 @@ In conclusion, creating an attendance application with Kotlin and Supabase was a
 ∙ To store Attendance Pictures and Profile Pictures I use **Imgur API** <br>
 ∙ Daily Attendance Data Detection uses the ``"date eq.now()"`` query on Params <br>
 ∙ The database also stores where user **Checked-Out** and **Checked-In** Location by **Longtitude** and **Latitude**
-
 
 
 
