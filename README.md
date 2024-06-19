@@ -1,5 +1,6 @@
 ![foto](https://i.imgur.com/1UT5EuC.png)
 
+[![Technologies](https://skillicons.dev/icons?i=supabase,kotlin,androidstudio)](https://skillicons.dev)
 
 # AttendanceApp
 Creating an attendance application can be a valuable tool for schools, universities, and organizations. Recently, I had the opportunity to create an attendance application using Kotlin, with an API based on Supabase.
