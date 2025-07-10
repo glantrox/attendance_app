@@ -101,14 +101,14 @@ interface SupabaseApi {
 
     companion object {
 
-        private const val APIKEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vdmxoa2d4anZjeXVyY3ZuaXljIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgzNDY5NzAsImV4cCI6MTk4MzkyMjk3MH0.3ZGFUTGdh5f-fFG-_hEMHSh-3f4ciUPnHvIBNN3Zzog"
+        private const val APIKEY = ""
 
 
 
 
         fun create(): SupabaseApi {
             return Retrofit.Builder()
-                .baseUrl("https://novlhkgxjvcyurcvniyc.supabase.co/rest/v1/")
+                .baseUrl("")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(SupabaseApi::class.java)
